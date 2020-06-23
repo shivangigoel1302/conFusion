@@ -186,8 +186,8 @@
                             <img class="d-block img-fluid"
                             src="img/buffet.png" alt="buffet">
                             <div class="carousel-caption d-none d-md-block">
-                                <h2>Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.990</span></h2>
-                                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>   
+                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                             </div>
                             
                         </div>
@@ -373,30 +373,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#mycarousel').carousel({interval: 2000});
-                $('#carouselButton').click(function(){
-                    if($('#carouselButton').children('span').hasClass('fa-pause')){
-                        $('#mycarousel').carousel('pause');
-                        $('#carouselButton').children('span').removeClass('fa-pause');
-                        $('#carouselButton').children('span').addClass('fa-play');
-                    }
-                    else if($('#carouselButton').children('span').hasClass('fa-play'))
-                    {
-                        $('#mycarousel').carousel('cycle');
-                        $('#carouselButton').children('span').removeClass('fa-play');
-                        $('#carouselButton').children('span').addClass('fa-pause');
-                    }
-                });
-            })
-            $('#reservationButton').click(function(){
-                $('#reservemodal').modal('toggle');
-            })
-            $('#login').click(function(){
-                $('#loginModal').modal('toggle');
-            })
-        </script>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>
